@@ -1,0 +1,45 @@
+.team-member-icons {
+  display: flex;
+  margin-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.team-member-icons .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  background-color: $background-color;
+  border-radius: 50px;
+
+  transition-property: $background-color;
+  fill: $gray-icons;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icons-link:hover,
+.team-icons-link:focus {
+  background-color: $accent-color;
+}
+
+.team-icons-link:hover .team-icon-svg,
+.team-icons-link:focus .team-icon-svg {
+  fill: $white-text-color;
+}
+
+.team-icon-svg {
+  width: 20px;
+  height: 20px;
+  fill: $gray-icons;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

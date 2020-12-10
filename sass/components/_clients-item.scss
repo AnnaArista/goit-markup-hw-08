@@ -1,0 +1,93 @@
+/* Секция Клиенты */
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+  border: 1px solid $gray-icons;
+  border-radius: 4px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo1 {
+  width: 44px;
+  height: 49px;
+  fill: $gray-icons;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo2 {
+  width: 40px;
+  height: 52px;
+  fill: $gray-icons;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo3 {
+  width: 41px;
+  height: 42px;
+  fill: $gray-icons;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo4 {
+  width: 80px;
+  height: 42px;
+  fill: $gray-icons;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo5 {
+  width: 59px;
+  height: 47px;
+  fill: $gray-icons;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo6 {
+  width: 89px;
+  height: 45px;
+  fill: $gray-icons;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-item-link:hover .logo1,
+.clients-item-link:hover .logo2,
+.clients-item-link:hover .logo3,
+.clients-item-link:hover .logo4,
+.clients-item-link:hover .logo5,
+.clients-item-link:hover .logo6,
+.clients-item-link:focus .logo1,
+.clients-item-link:focus .logo2,
+.clients-item-link:focus .logo3,
+.clients-item-link:focus .logo4,
+.clients-item-link:focus .logo5,
+.clients-item-link:focus .logo6 {
+  fill: $accent-color;
+}
+
+.clients-item-link:hover,
+.clients-item-link:focus {
+  border-color: $accent-color;
+}

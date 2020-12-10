@@ -1,0 +1,10 @@
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  /* Позиционирование преимуществ */
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

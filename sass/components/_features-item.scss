@@ -1,0 +1,55 @@
+.features p {
+  margin-bottom: 0px;
+
+  &-list .item {
+    width: 270px;
+  }
+
+  &-list .item::before {
+    content: "";
+    margin-bottom: 30px;
+    display: block;
+    height: 120px;
+    background-color: #f5f4fa;
+  }
+
+  &-list .details::before {
+    background-image: url(../images/features-details.svg);
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &-list .punctuality::before {
+    background-image: url(../images/features-punctuality.svg);
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &-list .planning::before {
+    background-image: url(../images/features-planning.svg);
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &-list .tech::before {
+    background-image: url(../images/features-tech.svg);
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &-title {
+    margin-bottom: 10px;
+
+    color: $headers-color;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}

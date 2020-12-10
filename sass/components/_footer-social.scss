@@ -1,0 +1,48 @@
+.footer-social {
+  padding-top: 10px;
+  margin-right: 86px;
+
+  & p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-text-color;
+  }
+
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-list {
+    display: flex;
+  }
+
+  &-list .item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &-link .footer-icon-svg {
+    width: 20px;
+    height: 20px;
+    fill: $white-text-color;
+  }
+
+  &-link:hover,
+  &-link:focus {
+    background-color: $accent-color;
+  }
+}

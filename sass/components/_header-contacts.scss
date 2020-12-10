@@ -1,0 +1,59 @@
+/* Задаем списку с контактами позиционирование */
+.nav-contacts {
+  display: flex;
+
+  & .item + .item {
+    margin-left: 50px;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    color: $text-color;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition-property: $text-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-item:hover,
+  &-item:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+
+  & .item p {
+    margin-bottom: 0;
+  }
+}
+
+/* Стили для иконок svg, цвет и ховер */
+.icon-email {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+
+  fill: currentColor;
+}
+
+.icon-email:hover,
+.icon-phone:hover {
+  fill: currentColor;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+
+  fill: currentColor;
+}
